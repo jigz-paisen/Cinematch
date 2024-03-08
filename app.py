@@ -222,7 +222,6 @@ if st.sidebar.button('Get Recommendations'):
             with col2:
                 # Make the movie title a clickable link to the TMDb page
                 st.markdown(f"**[Title: {movie['title']}]({movie_url})**", unsafe_allow_html=True)
-                st.write(f"**Title:** {movie['title']}")
                 st.write(f"**Genres:** {movie['genres']}")
                 st.write(f"**Release Year:** {movie['release_year']}")
                 st.write(f"**Rating:** {movie['rating']}")
