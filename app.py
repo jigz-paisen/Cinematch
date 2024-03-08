@@ -17,6 +17,21 @@ def load_data():
 tmdb_data, similarity = load_data()
 
 
+# Function to display a welcome message
+def show_welcome_message():
+    st.title("Welcome to CineMatch!")
+    st.markdown("""
+        🎬 **Your Personal Movie Recommender.**
+        
+        Get started by selecting options in the sidebar menu. You can search movies by **Title**, **Genre**, or **Year**.
+        
+        If you're on a mobile device, tap on the ☰ icon at the top-left corner to open the sidebar menu and begin exploring!
+    """)
+
+# Call the welcome message function at the beginning of your app
+show_welcome_message()
+
+
 # Function to get image data for use in custom HTML/CSS
 def get_image_data_as_base64(path):
     with open(path, "rb") as img_file:
