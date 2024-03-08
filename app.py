@@ -19,13 +19,13 @@ tmdb_data, similarity = load_data()
 
 # Function to display a welcome message
 def show_welcome_message():
-    st.title("Welcome to CineMatch!")
+    st.title("Welcome to Cinematch!")
     st.markdown("""
         🎬 **Your Personal Movie Recommender.**
         
         Get started by selecting options in the sidebar menu. You can search movies by **Title**, **Genre**, or **Year**.
         
-        If you're on a mobile device, tap on the ☰ icon at the top-left corner to open the sidebar menu and begin exploring!
+        If you're on a mobile device, tap on the [>] icon at the top-left corner to open the sidebar menu and begin exploring!
     """)
 
 # Call the welcome message function at the beginning of your app
